@@ -8,9 +8,6 @@ This is a simple movie recommendation system built using Python and Streamlit. I
 - [Usage](#usage)
 - [File Descriptions](#file-descriptions)
 - [Technologies Used](#technologies-used)
-- [Future Improvements](#future-improvements)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
