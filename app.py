@@ -20,5 +20,6 @@ selected_movie = st.selectbox('choose a movie', df_movies['title'])
 
 if st.button('select'):
     recommendations = recommend(selected_movie)
+    st.subheader('We believe you will also enjoy these movies:')
     for i in recommendations:
         st.write(i)
