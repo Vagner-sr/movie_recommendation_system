@@ -1,7 +1,8 @@
 import streamlit as st
 import pickle
 
-df_movies = pickle.load(open('../new_df.pkl', 'rb'))
+file_path = os.path.join(os.path.dirname(__file__), 'new_df.pkl')
+df_movies = pickle.load(open(file_path, 'rb'))
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 def recommend(movie):
