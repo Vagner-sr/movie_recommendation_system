@@ -1,11 +1,8 @@
 import streamlit as st
 import pickle
-import os
 
-caminho_arquivo = os.path.join(os.getcwd(), 'new_df.pkl')
-#df_movies = pickle.load(open('new_df.pkl', 'rb'))
-df_movies = pickle.load(open(caminho_arquivo, 'rb'))
 
+df_movies = pickle.load(open('new_df.pkl', 'rb'))
 similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 def recommend(movie):
