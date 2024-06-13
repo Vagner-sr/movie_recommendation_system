@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import os
 
 file_path = os.path.join(os.path.dirname(__file__), 'new_df.pkl')
 df_movies = pickle.load(open(file_path, 'rb'))
