@@ -2,8 +2,8 @@ import streamlit as st
 import pickle
 
 
-df_movies = pickle.load(open('../model/new_df.pkl', 'rb'))
-similarity = pickle.load(open('../model/similarity.pkl', 'rb'))
+df_movies = pickle.load(open('/model/new_df.pkl', 'rb'))
+similarity = pickle.load(open('/model/similarity.pkl', 'rb'))
 
 def recommend(movie):
     movie_index = df_movies[df_movies['title'] == movie].index[0]
